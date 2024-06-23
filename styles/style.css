@@ -10,23 +10,29 @@
     --cor-Ffooterheader: #000000;
     --cor-body: #F2F2EB;
     --cor-footerheader: #D9D9D2;
+    --cor-hover: #8C8C88;
 }
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Lato", "sans-serif";
 }
+
 body{
+    box-sizing: content-box;
     background-color: var(--cor-body);
-    
 }
+
 header{
     background-color: var(--cor-footerheader);
 }
+
 .cabecalho{
     display: flex;
     justify-content: center;
-}   
+}
+
 .cabecalho__menu{
     display: flex;
     flex-direction: row;
@@ -34,6 +40,7 @@ header{
     gap: 2.5rem;
     align-items: center;
 }
+
 .cabecalho__menu__link{
     display: flex;
     align-items:  center;
@@ -42,27 +49,32 @@ header{
     color: var(--cor-Ffooterheader);
     text-decoration-style: solid;
 }
+
 .apresentacao{
     display: flex;
     align-items: center;
     padding: 5% 10%;
     gap: 5.3rem;
 }
+
 .apresentacao__texto{
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
+
 .apresentacao__texto__titulo{
     font-family: var(--fonte-primaria);
     font-size: 2.25rem;
     color: var(--cor-Fprimaria);
 }
+
 .apresentacao__texto__paragrafo{
     font-family: var(--fonte-secundaria);
     color: var(--cor-Fsecundaria);
     font-size: 1.5rem;
 }
+
 .apresentacao__links{
     display: flex;
     justify-content: space-between;
@@ -71,11 +83,13 @@ header{
     gap: 0.8rem;
     color: var(--cor-Fprimaria);
 }
+
 .apresentacao__links__texto{
     font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 1.5rem;
 }
+
 .apresentacao__links__click{
     display: flex;
     font-size: 1.5rem;
@@ -90,14 +104,20 @@ header{
     border-color: var(--cor-Ffooterheader);
     color: var(--cor-Ffooterheader);
 }
+.apresentacao__links__click:hover{
+    background-color: var(--cor-hover);
+}
+
 .apresentacao__imagem{
     display: block;
-    width: 50%;
+    width: 45%;
     border-radius: 1rem;
 }
+
 footer{
     background-color: var(--cor-footerheader);
 }
+
 .rodape__texto{
     padding: 0.5%;
     font-family: var(--fonte-secundaria);
@@ -105,6 +125,7 @@ footer{
     color: var(--cor-Ffooterheader);
     text-align: center;
 }
+
 @media (max-width: 1200px) {
     .cabecalho{
         padding: 5% 2%;
@@ -117,9 +138,12 @@ footer{
         padding: 5%;
     }
     .apresentacao__conteudo{
-        width: auto;
+    width: auto;
     }
     .apresentacao__imagem{
         width: 18.1rem;
+    }
+    .apresentacao__links{
+        padding: 5% 0 5% 0;
     }
 }
