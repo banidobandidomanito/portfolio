@@ -64,7 +64,6 @@ header{
     font-size: 1rem;
     text-decoration: none;
     border-bottom: 3px solid var(--cor-Ffooterheader);
-
 }
 
 .apresentacao{
@@ -126,6 +125,20 @@ header{
     background-color: var(--cor-hover);
 }
 
+.apresentacao__lista{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7% ;
+    list-style: disc;
+}
+
+.apresentacao__lista__item{
+    display: list-item;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-Fsecundaria);
+}
+
 .apresentacao__projetos{
     display: flex;
     flex-direction: row;
@@ -141,7 +154,7 @@ header{
 .apresentacao__imagem{
     display: block;
     width: 400px;
-    height: 420px;
+    height: 400px;
     border-radius: 1rem;
 }
 
@@ -186,6 +199,9 @@ footer{
     }
     .apresentacao__links{
         padding: 5% 0 5% 0;
+    }
+    .apresentacao__links__click{
+        padding: 0.7rem 1.7rem;
     }
     .apresentacao__projetos{
         align-items: center;
