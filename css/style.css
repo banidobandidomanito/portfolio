@@ -2,32 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root{
-    --background: "./assets/background1.jpg";
     --fonte-primaria: "Do Hyeon","sans-serif" ;
     --fonte-secundaria: "Lato","sans-serif" ;
-    --cor-Fprimaria: #595957;
-    --cor-Fsecundaria: #8C8C88;
-    --cor-Ffooterheader: #000000;
-    --cor-body: #F2F2EB;
-    --cor-footerheader: #D9D9D2;
-    --cor-hover: #8C8C88;
-    --cor-maluca: #DFFF00;
+    --cor-Fprimaria: #cccccc;
+    --cor-Fsecundaria: #afafaf;
+    --cor-Ffooterheader: #ffffff;
+    --cor-body: #0a0a0c;
+    --cor-footerheader: #111114;
+    --cor-hover: #18181d;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: var(--fonte-secundaria);
 }
 
 body{
     height: 100%;
-    box-sizing: border-box;
     background-color: var(--cor-body);
 }
 
 .icon{
-    filter: brightness(0);
+    filter: invert(100%);
 }
 
 header{
@@ -42,23 +40,35 @@ header{
 .cabecalho__menu{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 0.5%;
     gap: 2.5rem;
+    padding: 1%;
+
 }
 
 .cabecalho__menu__link{
     display: flex;
     align-items: center;
+    text-align: center;
+    color: var(--cor-Ffooterheader);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+.cabecalho__menu__link--underline{
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: var(--cor-Ffooterheader);
     font-family: var(--fonte-primaria);
     font-size: 1rem;
     text-decoration: none;
+    border-bottom: 3px solid var(--cor-Ffooterheader);
+
 }
 
 .apresentacao{
     display: flex;
-    /* align-items: center; <--- apagar depois motivo: descentralisa os textos  */
     padding: 5% 10%;
     gap: 5.3rem;
 }
@@ -73,6 +83,7 @@ header{
     color: var(--cor-Fprimaria);
     font-family: var(--fonte-primaria);
     font-size: 2.25rem;
+    font-weight: 600;
 }
 
 .apresentacao__texto__paragrafo{
@@ -110,24 +121,27 @@ header{
     color: var(--cor-Ffooterheader);
     text-decoration: none;
 }
+
 .apresentacao__links__click:hover{
     background-color: var(--cor-hover);
 }
 
 .apresentacao__projetos{
     display: flex;
-    border: 2px solid purple;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .apresentacao__projetos__item{
-    width: 320px;
+    width: 300px; 
+    height: 200px;
+    border-radius: 8px;
 }
 
 .apresentacao__imagem{
     display: block;
-    width: 50%;
+    width: 400px;
+    height: 420px;
     border-radius: 1rem;
 }
 
@@ -145,12 +159,13 @@ footer{
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
 }
+
 .rodape__logo-alura{
     width: 130px;
-    filter: brightness(0)
+    filter: brightness(100)
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .cabecalho{
         padding: 5% 2%;
     }
@@ -167,6 +182,7 @@ footer{
     }
     .apresentacao__imagem{
         width: 18.1rem;
+        height: 18.1rem;
     }
     .apresentacao__links{
         padding: 5% 0 5% 0;

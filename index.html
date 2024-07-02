@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="./css/style.css" id="theme">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="./index.html"><img src="./assets/icons/ico-home.svg" width="24px" class="icon"> </img>Home</a>
+            <a class="cabecalho__menu__link--underline" href="./index.html"><img src="./assets/icons/ico-home.svg" width="24px" class="icon"> </img>Home</a>
             <a class="cabecalho__menu__link" href="./aboutme.html"><img src="./assets/icons/ico-aboutme.svg" width="24px" class="icon"> </img:>Habilidades</a>
             <a class="cabecalho__menu__link" href="./projects.html"><img src="./assets/icons/ico-projects.svg" width="24px" class="icon"> </img:>Projetos</a>
         </nav>
@@ -29,10 +30,10 @@
                     GitHub</a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/images/myphoto.jpg" alt="my photo">
+        <img class="apresentacao__imagem" src="./assets/images/myphoto.jpg" id="ibagem" alt="my photo">
     </main>
     <footer class="rodape">
-        <p class="rodape__texto">Desenvolvido por João Augusto.</p>
+        <p class="rodape__texto">Desenvolvido por <span onclick="opa()">João Augusto.</span></p>
         <img class="rodape__logo-alura" src="./assets/icons/alura-include.svg">
     </footer>
     <script src="./js/app.js"></script>
