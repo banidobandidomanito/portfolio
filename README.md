@@ -1,6 +1,9 @@
-<h1>Meu Portifólio</h1>
+# Meu Portifólio
 
-```Status do projeto: Em desenvolvimento...```
+```Status do projeto: Concluído...```
 
-<p>Este portifólio foi criado para praticar e fixar o conteúdo de Lógica de Programação estudado durante o projeto Alura Include.</p>
-<p>Desenvolvido por: Jonas</p>
+Este portifólio foi criado com o objetivo de fixar o conteúdo de Lógica de Programação e Design de Front End estudado durante o projeto **Alura Include**
+ 
+Alterações ainda poderão ocorrer.
+
+### Portifolio desenvolvido por: João Augusto
