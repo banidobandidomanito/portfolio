@@ -6,4 +6,4 @@ Este portfólio foi criado com o objetivo de fixar o conteúdo de Lógica de Pro
  
 Alterações ainda poderão ocorrer.
 
-### Portifolio desenvolvido por: João Augusto
+### Portfólio desenvolvido por: João Augusto
